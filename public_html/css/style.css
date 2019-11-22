@@ -1,0 +1,237 @@
+
+/* ===== fonts ===== */
+
+/*
+
+    font-family: 'Ubuntu', sans-serif;
+
+    font-family: 'Raleway', sans-serif;
+
+*/
+
+
+/* ===== colors =====*/
+
+:root {
+    --myrtle-green: #2c666e;
+    --ucla-blue: #577590;
+    --grey-asperagus: #3e5641;
+    --asperagus: #7fb069;
+    --rich-black: #02020b;
+    --dark-slate-green: #343a40;
+    --platinum: #eae6e5;
+     scroll-behavior: smooth;
+    
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto;
+
+}
+
+#logo {
+    width: 3rem;
+    height: 3rem;
+}
+
+nav {
+    background: var(--dark-slate-green);
+    position: fixed;
+    width: 100%;
+ 
+
+}
+
+#cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items:center;
+    justify-content: center;
+
+}
+
+.card-img {
+    max-width: 100%;
+    height: auto;
+    min-height: 12.5rem;
+}
+
+.card {
+    margin:1rem;
+    padding: 1rem;
+    background: var(--asperagus);
+    max-width: 18.5rem;
+}
+
+.card1 {
+    margin: 1rem;
+    padding: 1rem;
+    background: var(--ucla-blue);
+    color: white;
+    max-width: 18.5rem;
+}
+
+nav > ul {
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+    list-style-type: none;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+a.nav{
+    color: white;
+    text-decoration: none;
+}
+
+h3, h4, h5 {
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
+}
+
+p {
+    font-family: 'Raleway', sans-serif;
+}
+
+#projects{
+    margin-top: 80px;
+} 
+
+#about {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+#avatar {
+    width: 45%;
+    height: auto;
+    max-width: 12.5rem;
+}
+
+#about-icons {
+    display: flex;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+a.icon-link {
+    color: black;
+}
+
+.about-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+}
+
+label {
+    font-family: 'Raleway', sans-serif;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    padding: 1rem;
+    font-family: 'Raleway', sans-serif;
+}
+
+form > input, textarea {
+    padding: .5rem;
+    margin: 1rem;
+    max-width: 45rem;
+}
+
+
+#submit {
+    max-width: 5rem;
+    background: var(--asperagus);
+    border: none;
+}
+
+footer {
+    background: var(--dark-slate-green);
+    color: white;
+    width: 100%;
+    box-shadow: 0 50vh 0 50vh var(--dark-slate-green);
+}
+
+
+/* ===== Media Queries ===== */
+@media only screen and (min-width: 992px) {
+    nav {
+        grid-area: nav;
+    }
+    
+    #projects {
+        grid-area: projects;
+    }
+    
+    #about {
+        grid-area: about;
+    }
+    
+    #contact {
+        grid-area: contact;
+    }
+    
+    footer {
+        grid-area: footer;
+    }
+    
+    .grid-container {   
+        grid-template-columns: 50% 50%;
+        grid-template-areas: "nav nav"
+                             "projects projects"
+                             "about contact"
+                             "footer footer"
+    }
+
+}
+
+@media only screen and (min-width: 3840px) {
+
+    nav {
+        width:1920px;
+    }
+    
+    .grid-container {
+        grid-area: main;
+    }
+    
+    #left {
+        grid-area: a;
+        background: var(--dark-slate-green);
+    }
+    
+    #right {
+        grid-area: b;
+        background: var(--dark-slate-green);
+    }
+    
+    body {   
+
+        display: grid;
+        grid-template-columns: auto 1920px auto;
+        grid-template-rows: auto;
+        grid-template-areas: "a main b"
+                             "a main b"
+                             "a main b"
+                             "a main b"
+    }
+
+}
+
+
+
+

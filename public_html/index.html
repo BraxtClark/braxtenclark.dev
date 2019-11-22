@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8"> 
+        <title>braxtenclark.dev</title>
+        
+        <!-- google fonts -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway|Ubuntu"> 
+        
+        <!-- css -->
+        <link rel="stylesheet" href="../css/normalize.css">
+        <link rel="stylesheet" href="../css/style.css">
+        <!-- js -->
+        <script src="../js/scripts.js"></script> 
+        
+        <!-- favicon -->
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
+        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#343a40">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="theme-color" content="#ffffff">
+        
+        <!-- font awesome -->
+        <script src="https://kit.fontawesome.com/1269e007ce.js" crossorigin="anonymous"></script>
+        
+    </head>
+    
+    <body>
+        <div id="left"></div>
+        <div class="grid-container">
+            <nav>
+                <ul>
+                    <a href="#top" class="nav"><img id="logo" src="../assets/logo.svg" alt="site logo </>"></a>
+                    <!--<li>Home</li> -->
+                    <li><a href="#projects" class="nav">projects</a></li>
+                    <li><a href="#about" class="nav">about</a></li>
+                    <li><a href="#contact" class="nav">contact</a></li>
+                </ul>
+            </nav>
+            
+            <section id="projects">
+                <h3>projects</h3>
+            
+                <!-- blank project card -->    
+                <!--<div class="card">
+                    <img>
+                    <div>
+                        <h5></h5>
+                        <p></p>
+                    </div>
+                </div> -->
+                
+                <div id="cards">
+                    <div class="card">
+                        <img class="card-img" src="../assets/braxtenclark-card.png" alt="braxtenclark.com the first iteration of my portfolio site.">
+                        <div>
+                            <h4>braxtenclark.com</h4>
+                            <p>The first iteration of my portfolio site. Created with HTML, CSS and JS.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="card1">
+                        <img class="card-img" src="../assets/temp.png" alt="A temporary image to test multiple cards on the site">
+                        <div>
+                            <h4>A temporary title</h4>
+                            <p>A temporary image to test multiple cards on the site</p>
+                        </div>
+                    </div>
+                    
+                     <div class="card1">
+                        <img class="card-img" src="../assets/temp.png" alt="A temporary image to test multiple cards on the site">
+                        <div>
+                            <h4>A temporary title</h4>
+                            <p>A temporary image to test multiple cards on the site</p>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <img class="card-img" src="../assets/temp.png" alt="A temporary image to test multiple cards on the site">
+                        <div>
+                            <h4>A temporary title</h4>
+                            <p>A temporary image to test multiple cards on the site</p>
+                        </div>
+                    </div>
+                    
+                    <div class="card1">
+                        <img class="card-img" src="../assets/temp.png" alt="A temporary image to test multiple cards on the site">
+                        <div>
+                            <h4>A temporary title</h4>
+                            <p>A temporary image to test multiple cards on the site</p>
+                        </div>
+                    </div>
+                </div><!-- cards -->
+            </section><!-- projects -->
+            
+            <section id="about">
+                <h3>about</h3>
+                <img id="avatar" src="../assets/avataaars.svg" alt="Avatar created @ https://getavataaars.com">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum accumsan velit arcu, vitae lacinia augue imperdiet at. Duis ultrices condimentum nulla id rutrum. Maecenas lacinia lobortis justo tristique efficitur. Sed ut aliquet massa, non gravida erat. Sed posuere dignissim metus non consectetur. Nunc eu est dignissim, consectetur eros sit amet, consectetur mi. Sed consectetur, elit in suscipit elementum, ligula velit lacinia nisi, in porttitor sapien neque et libero. </p>
+                <div id="about-icons">
+                    <div class="about-icon"><i class="far fa-file-pdf fa-3x" id="resume"></i><label for="resume">resume</label></div>
+                    <div class="about-icon"><a href="https://github.com/BraxtClark" target="_blank" class="icon-link"><i class="fab fa-github fa-3x" id="github"></i></a><label for="github">github</label></div>
+                </div>
+            </section><!-- about-->
+                
+            <section id="contact">
+                <h3>contact</h3>
+                <form action="https://formspree.io/admin@braxtenclark.dev.com" method= "POST">
+                    <label for="name">Your name</label><input id="name" type="text" name="name" required>
+                    <label for="email">Your email address</label><input id="email" type="email" name="_replyto" required>
+                    <label for="message">Your message</label><textarea id="message" name="message" rows="5" cols="15"></textarea>
+                    <label for="submit">Yes, submit this form</label><input id="submit" type="submit" value="Send">
+                </form>
+                
+            </section><!-- contact-->
+    
+            <footer>
+                <h3>&copy; <script>copyrightYear()</script> Braxten Clark</h3> 
+            </footer>
+            
+            
+        </div><!--- /grid container -->    
+        <div id="right"></div>
+    </body>
+    
+</html>
